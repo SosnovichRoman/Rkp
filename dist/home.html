@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230314132830">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top top-header">
+					<a href="" class="top-header__logo">
+						<img src="{% static 'img/header/logo.png' %}" alt="">
+						<span class="top-header__logo-text">Ремкотлопроект</span>
+					</a>
+					<div class="top-header__stb">
+						<img src="{% static 'img/header/stb.png' %}" alt="">
+						<img src="{% static 'img/header/tp-by.png' %}" alt="">
+					</div>
+					<div class="top-header__contacts">
+						<div class="top-header__subtitle">
+							<span class="text-blue">8(0232)</span>31-99-70
+						</div>
+						<div>Пн-Пт с 9:30 до 17:30</div>
+					</div>
+					<div class="top-header__address">
+						<div class="top-header__subtitle">
+							<span class="text-blue">246014г. Гомель,</span>
+						</div>
+						<div> ул. Шоссейная, д. 2</div>
+					</div>
+					<div class="top-header__social">
+						<img src="{% static 'img/social/inst.png' %}" alt="">
+						<img src="{% static 'img/social/telegram.svg' %}" alt="">
+					</div>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">КАТАЛОГ</a></li>
+							<li class="menu__item"><a href="" class="menu__link">УСЛУГИ</a></li>
+							<li class="menu__item menu__about-us about-us-menu">
+								<span class="about-us-menu__about-us _icon-cheveron-down">О НАС</span>
+								<ul class="about-us-menu__list">
+									<li class="about-us-menu__item">
+										<a href="" class="menu__link">О компании</a>
+									</li>
+									<li class="about-us-menu__item">
+										<a href="" class="menu__link">О компании</a>
+									</li>
+									<li class="about-us-menu__item">
+										<a href="" class="menu__link">О компании</a>
+									</li>
+									<li class="about-us-menu__item">
+										<a href="" class="menu__link">О компании</a>
+									</li>
+									<li class="about-us-menu__item">
+										<a href="" class="menu__link">О компании</a>
+									</li>
+									<li class="about-us-menu__item">
+										<a href="" class="menu__link">О компании</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item"><a href="" class="menu__link">ОПРОСНЫЕ ЛИСТЫ</a></li>
+							<li class="menu__item"><a href="" class="menu__link">КОНТАКТЫ</a></li>
+							<li class="menu__item"><span data-popup="#popup" class="menu__link">СВЯЗАТЬСЯ С НАМИ</span></li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+		<main class="page">
+			<section class="main-preview">
+				<img class="main-preview__img" src="{% static 'img/main/preview/background-white.png' %}" alt="">
+				<div class="main-preview__container">
+					<h1 class="main-preview__title">Ваши мечты -<br>наша цель!</h1>
+				</div>
+			</section>
+			<section class="main-about-company">
+				<div class="main-about-company__container">
+					<h2 class="main-about-company__title heading-2">О компании</h2>
+					<div class="main-about-company__body">
+						<div class="main-about-company__card card-main-about-company">
+							<div class="card-main-about-company__top">
+								<img class="card-main-about-company__img" src="{% static 'img/main/about-company/01.svg' %}" alt="">
+								<h3 class="card-main-about-company__title">Лучший Сервис</h3>
+							</div>
+							<div class="card-main-about-company__desc">
+								Нашим сервисом довольны более 80 клиентов.
+							</div>
+						</div>
+						<div class="main-about-company__card card-main-about-company">
+							<div class="card-main-about-company__top">
+								<img class="card-main-about-company__img" src="{% static 'img/main/about-company/02.svg' %}" alt="">
+								<h3 class="card-main-about-company__title">Лучшая Команда</h3>
+							</div>
+							<div class="card-main-about-company__desc">
+								Наша команда обладает всеми нужными навыками.
+							</div>
+						</div>
+						<div class="main-about-company__card card-main-about-company">
+							<div class="card-main-about-company__top">
+								<img class="card-main-about-company__img" src="{% static 'img/main/about-company/03.svg' %}" alt="">
+								<h3 class="card-main-about-company__title">Качественные проекты</h3>
+							</div>
+							<div class="card-main-about-company__desc">
+								Наши проекты выполняется качественно и в нужные сроки.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-about-us">
+				<div class="main-about-us__container">
+					<div class="main-about-us__body">
+						<div class="main-about-us__img-ibg">
+							<img src="{% static 'img/main/about-us.png' %}" alt="">
+						</div>
+						<div class="main-about-us__content">
+							<h2 class="main-about-us__title heading-4">
+								О нас
+							</h2>
+							<div class="main-about-us__desc body-large">
+								Многолетний опыт работы команды технических специалистов компании
+								в области проектирования, монтажа, пусконаладочных работ, обслуживания котельного и
+								газоснабжающего оборудования во многих отраслях промышленности привел к пониманию
+								качества поставляемых на объекты материалов.
+							</div>
+							<a href="" class="main-about-us__button button-white">
+								Узнать больше
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-services">
+				<div class="main-services__container">
+					<h2 class="main-services__title heading-2">
+						Услуги
+					</h2>
+					<div class="main-services__content">
+						<div class="main-services__item item-main-services">
+							<img src="{% static 'img/main/services/01.svg' %}" class="item-main-services__icon">
+							<span class="item-main-services__line"></span>
+							<h3 class="item-main-services__title">
+								Ремонт
+							</h3>
+						</div>
+						<div class="main-services__item item-main-services">
+							<img src="{% static 'img/main/services/02.svg' %}" class="item-main-services__icon">
+							<span class="item-main-services__line"></span>
+							<h3 class="item-main-services__title">
+								Наладка
+							</h3>
+						</div>
+						<div class="main-services__item item-main-services">
+							<img src="{% static 'img/main/services/03.svg' %}" class="item-main-services__icon">
+							<span class="item-main-services__line"></span>
+							<h3 class="item-main-services__title">
+								Консультация
+							</h3>
+						</div>
+						<div class="main-services__item item-main-services">
+							<img src="{% static 'img/main/services/04.svg' %}" class="item-main-services__icon">
+							<span class="item-main-services__line"></span>
+							<h3 class="item-main-services__title">
+								Поставка оборудования
+							</h3>
+						</div>
+						<div class="main-services__item item-main-services">
+							<img src="{% static 'img/main/services/05.svg' %}" class="item-main-services__icon">
+							<span class="item-main-services__line"></span>
+							<h3 class="item-main-services__title">
+								Проектирование
+							</h3>
+						</div>
+						<div class="main-services__item item-main-services">
+							<img src="{% static 'img/main/services/06.svg' %}" class="item-main-services__icon">
+							<span class="item-main-services__line"></span>
+							<h3 class="item-main-services__title">
+								Монтаж
+							</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-experience">
+				<div class="main-experience__container">
+					<h2 class="main-experience__title heading-2">10 лет опыта</h2>
+					<div class="main-experience__cards">
+						<div class="main-experience__card card-main-experience card-main-experience_1">
+							<img src="{% static 'img/main/experience/01.png' %}" class="card-main-experience__img" alt="">
+							<div class="card-main-experience__title heading-1">
+								84
+							</div>
+							<div class="card-main-experience__desc">
+								Счастливых клиентов
+							</div>
+						</div>
+						<div class="main-experience__card card-main-experience card-main-experience_2">
+							<img src="{% static 'img/main/experience/02.png' %}" class="card-main-experience__img" alt="">
+							<div class="card-main-experience__title heading-1">
+								84
+							</div>
+							<div class="card-main-experience__desc">
+								Счастливых клиентов
+							</div>
+						</div>
+						<div class="main-experience__card card-main-experience card-main-experience_3">
+							<img src="{% static 'img/main/experience/03.png' %}" class="card-main-experience__img" alt="">
+							<div class="card-main-experience__title heading-1">
+								84
+							</div>
+							<div class="card-main-experience__desc">
+								Счастливых клиентов
+							</div>
+						</div>
+						<div class="main-experience__card card-main-experience card-main-experience_4">
+							<img src="{% static 'img/main/experience/04.png' %}" class="card-main-experience__img" alt="">
+							<div class="card-main-experience__title heading-1">
+								84
+							</div>
+							<div class="card-main-experience__desc">
+								Счастливых клиентов
+							</div>
+						</div>
+					</div>
+					<div class="main-experience__desc body-default">
+						ООО «Ремкотлопроект» является официальным Дилером и сервисным партнером<br>
+						ООО «Торговый Дом АДЛ» на территории Республики Беларусь
+					</div>
+					<a href="" class="main-experience__button button-blue">
+						Связаться с нами
+					</a>
+				</div>
+			</section>
+			<section class="main-consultation main-consultation-ibg">
+				<img src="{% static 'img/main/consultation.png' %}" alt="">
+				<div class="main-consultation__container">
+					<h2 class="main-consultation__title heading-4">Бесплатная консультация</h2>
+					<div class="main-consultation__desc body-medium">
+						Всего один звонок и мы поможем:
+						<a href="tel:+375-33-111-22-33" class="main-consultation__tel">+375 (33) 111-22-33</a>
+					</div>
+					<a href="" class="main-consultation__button button-white">
+						Получить консультацию
+					</a>
+				</div>
+			</section>
+			<section class="main-projects">
+				<div class="main-projects__container">
+					<h2 class="main-projects__title heading-2">Наши проекты</h2>
+					<div data-tabs class="tabs-main-projects">
+						<nav data-tabs-titles class="tabs-main-projects__navigation">
+							<button type="button" class="tabs-main-projects__title _tab-active">Все</button>
+							<button type="button" class="tabs-main-projects__title">Заводы</button>
+							<button type="button" class="tabs-main-projects__title">Котельные</button>
+						</nav>
+						<div data-tabs-body class="tabs-main-projects__content">
+							<div class="tabs-main-projects__body">
+								<div class="card-main-projects">
+									<div class="card-main-projects__img-ibg">
+										<img src="{% static 'img/main/projects/01.png' %}" alt="">
+									</div>
+									<div class="card-main-projects__content">
+										<h4 class="card-main-projects__title">ДЕЛКОМ 40</h4>
+										<div class="card-main-projects__desc">
+											Гомель, ул. Борисенко 11A
+										</div>
+									</div>
+								</div>
+								<div class="card-main-projects">
+									<div class="card-main-projects__img-ibg">
+										<img src="{% static 'img/main/projects/02.png' %}" alt="">
+									</div>
+									<div class="card-main-projects__content">
+										<h4 class="card-main-projects__title">ОАО «БЕЛС­ВЯЗЬСТРОЙ»</h4>
+										<div class="card-main-projects__desc">
+											Гомель, ул. Объездная 20
+										</div>
+									</div>
+								</div>
+								<div class="card-main-projects">
+									<div class="card-main-projects__img-ibg">
+										<img src="{% static 'img/main/projects/03.png' %}" alt="">
+									</div>
+									<div class="card-main-projects__content">
+										<h4 class="card-main-projects__title">ОАО «ГЗЛИН»</h4>
+										<div class="card-main-projects__desc">
+											Гомель, ул. Могилевская, 16
+										</div>
+									</div>
+								</div>
+								<div class="card-main-projects">
+									<div class="card-main-projects__img-ibg">
+										<img src="{% static 'img/main/projects/04.png' %}" alt="">
+									</div>
+									<div class="card-main-projects__content">
+										<h4 class="card-main-projects__title">ОАО «СЛОНИММЕБЕЛЬ»</h4>
+										<div class="card-main-projects__desc">
+											Слоним, ул. Торговая 9
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-main-projects__body">
+								<div class="card-main-projects">
+									<div class="card-main-projects__img-ibg">
+										<img src="{% static 'img/main/projects/01.png' %}" alt="">
+									</div>
+									<div class="card-main-projects__content">
+										<h4 class="card-main-projects__title">ДЕЛКОМ 40</h4>
+										<div class="card-main-projects__desc">
+											Гомель, ул. Борисенко 11A
+										</div>
+									</div>
+								</div>
+								<div class="card-main-projects">
+									<div class="card-main-projects__img-ibg">
+										<img src="{% static 'img/main/projects/02.png' %}" alt="">
+									</div>
+									<div class="card-main-projects__content">
+										<h4 class="card-main-projects__title">ОАО «БЕЛС­ВЯЗЬСТРОЙ»</h4>
+										<div class="card-main-projects__desc">
+											Гомель, ул. Объездная 20
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-main-projects__body">
+								<div class="card-main-projects">
+									<div class="card-main-projects__img-ibg">
+										<img src="{% static 'img/main/projects/03.png' %}" alt="">
+									</div>
+									<div class="card-main-projects__content">
+										<h4 class="card-main-projects__title">ОАО «ГЗЛИН»</h4>
+										<div class="card-main-projects__desc">
+											Гомель, ул. Могилевская, 16
+										</div>
+									</div>
+								</div>
+								<div class="card-main-projects">
+									<div class="card-main-projects__img-ibg">
+										<img src="{% static 'img/main/projects/04.png' %}" alt="">
+									</div>
+									<div class="card-main-projects__content">
+										<h4 class="card-main-projects__title">ОАО «СЛОНИММЕБЕЛЬ»</h4>
+										<div class="card-main-projects__desc">
+											Слоним, ул. Торговая 9
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="" class="main-projects__button button-blue">Увидеть больше</a>
+				</div>
+			</section>
+			<div class="main-form">
+				<div class="main-form__container">
+					<section class="main-form__help-form help-form">
+						<h2 class="help-form__title heading-4">
+							Чем мы можем Вам помочь?
+						</h2>
+						<div class="help-form__desc body-medium">
+							Мы готовы работать над проектом любой сложности,<br> будь то коммерческий или жилой.
+						</div>
+						<form class="help-form__form" action="">
+							<input placeholder="Ваше имя*" aria-required="Обязательное поле" type="text" class="help-form__input body-default">
+							<input placeholder="Почта*" aria-required="Обязательное поле" type="text" class="help-form__input body-default">
+							<input placeholder="Наименование компании*" aria-required="Обязательное поле" type="text" class="help-form__input body-default">
+							<input placeholder="Телефон" type="tel" class="help-form__input body-default">
+							<textarea placeholder="Комментарии" rows="4" class="help-form__input body-default"></textarea>
+						</form>
+						<div class="help-form__tip">* Обязательное поле для заполнения</div>
+						<a href="" class="help-form__button button-blue">Отправить</a>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container body-medium">
+				<div class="footer__top">
+					<nav class="footer__navigation">
+						<a href="" class="top-header__logo">
+							<img src="{% static 'img/header/logo.png' %}" alt="">
+							<span class="top-header__logo-text">Ремкотлопроект</span>
+						</a>
+						<ul class="footer__menu">
+							<li class="footer__item">
+								<a href="" class="footer__link">КАТАЛОГ</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__link">УСЛУГИ</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__link">О НАС</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__link">ОПРОСНЫЕ ЛИСТЫ</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__link">КАЛЬКУЛЯТОРЫ</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__link">КОНТАКТЫ</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__link">СВЯЗАТЬСЯ С НАМИ</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__contacts contacts-footer">
+						<form action="" class="contacts-footer__form">
+							<div class="contacts-footer__form-title">
+								Для получения новостей, оставьте вашу почту:
+							</div>
+							<div class="contacts-footer__input body-default">
+								<input placeholder="Введите почту" type="email" name="" id="">
+								<a href="" class="contacts-footer__button button-blue">
+									<span>Подписаться</span>
+									<img src="{% static 'img/footer/mail-send.svg' %}" alt="">
+								</a>
+							</div>
+						</form>
+						<ul class="contacts-footer__list">
+							<li class="contacts-footer__item">
+								<span class="contacts-footer__title">Адрес:</span>
+								<span class="contacts-footer__desc">246004, г. Гомель, ул. Шоссейная, 2</span>
+							</li>
+							<li class="contacts-footer__item">
+								<span class="contacts-footer__title">Телефон:</span>
+								<a class="contacts-footer__link" href="tel:80(232) 32-97-88">80(232) 32-97-88,</a>
+								<a class="contacts-footer__link" href="tel:80(232) 32-97-88">80(232) 32-97-81</a>
+							</li>
+							<li class="contacts-footer__item">
+								<span class="contacts-footer__title">Почта:</span>
+								<a class="contacts-footer__link" href="mailto:maggmb@mail.ru">maggmb@mail.ru</a>
+							</li>
+							<li class="contacts-footer__item">
+								<span class="contacts-footer__title">Соц. сети:</span>
+								<div class="contacts-footer__social">
+									<img src="{% static 'img/social/inst.png' %}" alt="">
+									<img src="{% static 'img/social/telegram.svg' %}" alt="">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1022.5273704189212!2d30.983952393764874!3d52.44302982720979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d46947df20ae87%3A0xf9b3cf9fc52e9ab!2z0YPQuy4g0KjQvtGB0YHQtdC50L3QsNGPIDIsINCT0L7QvNC10LvRjCAyNDYwMDQ!5e0!3m2!1sru!2sby!4v1676025296319!5m2!1sru!2sby" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="footer__bottom">
+					ООО "РемКотлоПроект" 2012-2022 ©. Все Права Защищены
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__feedback">
+					<section class="main-form__help-form help-form">
+						<h2 class="help-form__title heading-4">
+							Чем мы можем Вам помочь?
+						</h2>
+						<div class="help-form__desc body-medium">
+							Мы готовы работать над проектом любой сложности,<br> будь то коммерческий или жилой.
+						</div>
+						<form class="help-form__form" action="">
+							<input placeholder="Ваше имя*" aria-required="Обязательное поле" type="text" class="help-form__input body-default">
+							<input placeholder="Почта*" aria-required="Обязательное поле" type="text" class="help-form__input body-default">
+							<input placeholder="Наименование компании*" aria-required="Обязательное поле" type="text" class="help-form__input body-default">
+							<input placeholder="Телефон" type="tel" class="help-form__input body-default">
+							<textarea placeholder="Комментарии" rows="4" class="help-form__input body-default"></textarea>
+						</form>
+						<div class="help-form__tip">* Обязательное поле для заполнения</div>
+						<a href="" class="help-form__button button-blue">Отправить</a>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230314132830"></script>
+</body>
+
+</html>
